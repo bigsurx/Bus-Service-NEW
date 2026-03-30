@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Service — Пассажирские перевозки в Кыргызстане, Казахстане, Узбекистане</title>
+  <meta name="description" content="Аренда автобусов, микроавтобусов, внедорожников и VIP-транспорта с водителем. Работаем с 2021 года. Бишкек, Казахстан, Узбекистан.">
+  <link rel="icon" href="assets/images/logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Reveal animations */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.revealed { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: .1s; }
+    .reveal-delay-2 { transition-delay: .2s; }
+    .reveal-delay-3 { transition-delay: .3s; }
+    .reveal-delay-4 { transition-delay: .4s; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════
+     HEADER
+══════════════════════════════ -->
+<header class="site-header" role="banner">
+  <div class="container">
+    <div class="header-inner">
+      <a href="/" class="site-logo" aria-label="Bus Service — главная">
+        <img src="assets/images/logo.jpg" alt="Bus Service логотип" width="44" height="44">
+        <div class="site-logo-text">
+          <div class="site-logo-name">Bus Service</div>
+          <div class="site-logo-tagline">Пассажирские перевозки</div>
+        </div>
+      </a>
+
+      <nav class="site-nav" aria-label="Главная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#fleet">Автопарк</a>
+        <a href="#about">О компании</a>
+        <a href="#team">Команда</a>
+        <a href="#contact">Контакты</a>
+        <a href="vehicles/">Каталог</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+996500809996" class="header-phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          <span>+996 500 809 996</span>
+        </a>
+        <div class="lang-switcher" aria-label="Выбор языка">
+          <a href="/" class="active" hreflang="ru" aria-current="page">RU</a>
+          <a href="en/" hreflang="en">EN</a>
+          <a href="de/" hreflang="de">DE</a>
+        </div>
+        <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<section class="hero" id="home" aria-label="Главный баннер">
+  <div class="hero-bg">
+    <img src="assets/images/hero-bus.jpg" alt="Автобусный парк Bus Service" loading="eager" fetchpriority="high">
+  </div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span></span>
+        Работаем с 2021 года
+      </div>
+
+      <h1 class="hero-title">
+        Пассажирские<br>
+        перевозки<br>
+        <em>любого масштаба</em>
+      </h1>
+
+      <p class="hero-subtitle">
+        Аренда автобусов, микроавтобусов, внедорожников и VIP-транспорта с профессиональными водителями. Кыргызстан, Казахстан, Узбекистан.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary btn-lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          Заказать транспорт
+        </a>
+        <a href="vehicles/" class="btn btn-outline">
+          Смотреть автопарк
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-value" data-count="4" data-suffix="+">4+</div>
+          <div class="hero-stat-label">Года работы</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value" data-count="50" data-suffix="+">50+</div>
+          <div class="hero-stat-label">Единиц техники</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value" data-count="8" data-suffix="">8</div>
+          <div class="hero-stat-label">Опытных водителей</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value" data-count="3" data-suffix="">3</div>
+          <div class="hero-stat-label">Страны</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Листать</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 7l5 5 5-5"/></svg>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     TRUST BAR
+══════════════════════════════ -->
+<div class="trust-bar" role="complementary" aria-label="Ключевые преимущества">
+  <div class="container">
+    <div class="trust-bar-inner">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        <span class="trust-item-text">Надёжность и безопасность</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <span class="trust-item-text">Поддержка 24/7</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        <span class="trust-item-text">Профессиональные водители</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        <span class="trust-item-text">Современный автопарк</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        <span class="trust-item-text">Доступные цены</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════
+     SERVICES
+══════════════════════════════ -->
+<section class="section" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="text-center">
+      <p class="section-label">Наши услуги</p>
+      <h2 class="section-title" id="services-title">Полный спектр транспортных услуг</h2>
+      <p class="section-subtitle">От компактных минивэнов до больших туристических автобусов — подберём транспорт под любую задачу</p>
+    </div>
+
+    <div class="services-grid">
+
+      <article class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <h3 class="service-title">Аренда автобуса</h3>
+        <p class="service-desc">Туристические автобусы YUTONG, NEOPLAN, ZHONGTONG на 34–53 места. Кондиционер, TV, микрофон, туалет на борту.</p>
+        <a href="vehicles/?category=bus" class="service-link">
+          Выбрать автобус
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11a2 2 0 012 2v3m-1 11l2 2 4-4m2-7H8a2 2 0 00-2 2v6a2 2 0 002 2h12a2 2 0 002-2v-6a2 2 0 00-2-2z"/></svg>
+        </div>
+        <h3 class="service-title">Аренда микроавтобуса</h3>
+        <p class="service-desc">Mercedes Benz Sprinter и аналоги на 15–21 место. Идеально для корпоративных трансферов и групповых поездок.</p>
+        <a href="vehicles/?category=minibus" class="service-link">
+          Выбрать микроавтобус
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <article class="service-card reveal reveal-delay-2">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+        </div>
+        <h3 class="service-title">Аренда внедорожника</h3>
+        <p class="service-desc">Toyota Sequoia, Land Cruiser Prado, Lexus LX/GX с опытными водителями. Для горных маршрутов и труднодоступных мест.</p>
+        <a href="vehicles/?category=suv" class="service-link">
+          Выбрать внедорожник
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <article class="service-card reveal reveal-delay-3">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3 class="service-title">VIP-транспорт</h3>
+        <p class="service-desc">Mercedes Benz V Class, S-Class, Maybach. Представительский сервис для бизнес-поездок, встреч делегаций и особых мероприятий.</p>
+        <a href="vehicles/?category=vip" class="service-link">
+          Выбрать VIP
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+        </div>
+        <h3 class="service-title">Туристические туры</h3>
+        <p class="service-desc">Организация транспорта для экскурсионных туров по Кыргызстану, Казахстану и Центральной Азии. Полное сопровождение маршрута.</p>
+        <a href="#contact" class="service-link">
+          Узнать подробнее
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3zM7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg>
+        </div>
+        <h3 class="service-title">Прокат авто без водителя</h3>
+        <p class="service-desc">Самостоятельная аренда внедорожников 4x4 для путешественников. Toyota Prado, Sequoia, RAV4, Lada Niva. Подробнее на странице Asia Expeditions.</p>
+        <a href="en/rent-a-car.html" class="service-link">
+          Прокат авто
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     WHY US
+══════════════════════════════ -->
+<section class="section section--dark" id="why" aria-labelledby="why-title">
+  <div class="container">
+    <div class="text-center">
+      <p class="section-label">Почему мы</p>
+      <h2 class="section-title" id="why-title">8 причин выбрать Bus Service</h2>
+      <p class="section-subtitle">Мы сделали всё, чтобы ваши поездки были комфортными, безопасными и без лишних забот</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-number">01</div>
+        <h3 class="why-title">Надёжность и безопасность</h3>
+        <p class="why-desc">Регулярное техническое обслуживание всего парка. Все автомобили застрахованы и проходят контроль перед каждым рейсом.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-number">02</div>
+        <h3 class="why-title">Профессиональные водители</h3>
+        <p class="why-desc">Опыт от 10 до 39 лет. Знание местных дорог, горных маршрутов и пограничных переходов Центральной Азии.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-number">03</div>
+        <h3 class="why-title">Современный автопарк</h3>
+        <p class="why-desc">Постоянно обновляем технику. Автобусы с кондиционером, USB-зарядками, Wi-Fi и развлекательной системой.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-3">
+        <div class="why-number">04</div>
+        <h3 class="why-title">Гибкие условия аренды</h3>
+        <p class="why-desc">Почасовая, посуточная и долгосрочная аренда. Индивидуальный подход к каждому клиенту и маршруту.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-number">05</div>
+        <h3 class="why-title">Доступные цены</h3>
+        <p class="why-desc">Прозрачное ценообразование без скрытых платежей. Специальные тарифы для постоянных клиентов и корпоративных партнёров.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-1">
+        <div class="why-number">06</div>
+        <h3 class="why-title">Поддержка 24/7</h3>
+        <p class="why-desc">Круглосуточная диспетчерская служба. Оперативно решаем любые вопросы на протяжении всей поездки.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-2">
+        <div class="why-number">07</div>
+        <h3 class="why-title">Широкий выбор транспорта</h3>
+        <p class="why-desc">Автобусы, микроавтобусы, внедорожники, VIP-авто, минивэны. Транспорт для туристов, корпораций и частных лиц.</p>
+      </div>
+      <div class="why-card reveal reveal-delay-3">
+        <div class="why-number">08</div>
+        <h3 class="why-title">Простое бронирование</h3>
+        <p class="why-desc">Оставьте заявку на сайте или позвоните — подберём транспорт в течение 5 минут и подтвердим бронирование.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     FLEET PREVIEW
+══════════════════════════════ -->
+<section class="section section--gray" id="fleet" aria-labelledby="fleet-title">
+  <div class="container">
+    <div class="text-center">
+      <p class="section-label">Автопарк</p>
+      <h2 class="section-title" id="fleet-title">Наш автопарк</h2>
+      <p class="section-subtitle">Более 50 единиц техники — автобусы, микроавтобусы, внедорожники, VIP-авто</p>
+    </div>
+
+    <div class="fleet-tabs" role="tablist" aria-label="Категории транспорта">
+      <button class="fleet-tab active" data-category="all" role="tab" aria-selected="true">Все</button>
+      <button class="fleet-tab" data-category="bus" role="tab" aria-selected="false">Автобусы</button>
+      <button class="fleet-tab" data-category="minibus" role="tab" aria-selected="false">Микроавтобусы</button>
+      <button class="fleet-tab" data-category="suv" role="tab" aria-selected="false">Внедорожники</button>
+      <button class="fleet-tab" data-category="vip" role="tab" aria-selected="false">VIP</button>
+    </div>
+
+    <div class="fleet-grid">
+
+      <!-- Buses -->
+      <article class="vehicle-card reveal" data-category="bus">
+        <div class="vehicle-card-img">
+          <img src="assets/images/bus-yutong.webp" alt="YUTONG туристический автобус" loading="lazy" width="600" height="375">
+          <div class="vehicle-card-badge">Автобус</div>
+        </div>
+        <div class="vehicle-card-body">
+          <h3 class="vehicle-card-title">YUTONG 51 место</h3>
+          <div class="vehicle-card-meta">
+            <span class="vehicle-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              51 мест
+            </span>
+            <span class="vehicle-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+              Кондиционер, TV, Wi-Fi
+            </span>
+          </div>
+        </div>
+        <div class="vehicle-card-footer">
+          <div class="vehicle-price">
+            <strong>По запросу</strong>
+            Уточните стоимость
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">Заказать</a>
+        </div>
+      </article>
+
+      <article class="vehicle-card reveal reveal-delay-1" data-category="bus">
+        <div class="vehicle-card-img">
+          <img src="assets/images/bus-neoplan.webp" alt="NEOPLAN туристический автобус" loading="lazy" width="600" height="375">
+          <div class="vehicle-card-badge">Автобус</div>
+        </div>
+        <div class="vehicle-card-body">
+          <h3 class="vehicle-card-title">NEOPLAN 51 место</h3>
+          <div class="vehicle-card-meta">
+            <span class="vehicle-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              51 мест
+            </span>
+            <span class="vehicle-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+              Премиум салон, туалет
+            </span>
+          </div>
+        </div>
+        <div class="vehicle-card-footer">
+          <div class="vehicle-price">
+            <strong>По запросу</strong>
+            Уточните стоимость
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">Заказать</a>
+        </div>
+      </article>
+
+      <!-- Minibus -->
+      <article class="vehicle-card reveal reveal-delay-2" data-category="minibus">
+        <div class="vehicle-card-img">
+          <img src="assets/images/minibus-sprinter.jpg" alt="Mercedes Benz Sprinter микроавтобус" loading="lazy" width="600" height="375">
+          <div class="vehicle-card-badge">Микроавтобус</div>
+        </div>
+        <div class="vehicle-card-body">
+          <h3 class="vehicle-card-title">Mercedes Benz Sprinter</h3>
+          <div class="vehicle-card-meta">
+            <span class="vehicle-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              16+1 мест
+            </span>
+            <span class="vehicle-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+              Кондиционер, USB
+            </span>
+          </div>
+        </div>
+        <div class="vehicle-card-footer">
+          <div class="vehicle-price">
+            <strong>По запросу</strong>
+            Уточните стоимость
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">Заказать</a>
+        </div>
+      </article>
+
+      <!-- SUV -->
+      <article class="vehicle-card reveal" data-category="suv">
+        <div class="vehicle-card-img">
+          <img src="assets/images/vehicle-suv-1.jpg" alt="Toyota Sequoia внедорожник" loading="lazy" width="600" height="375">
+          <div class="vehicle-card-badge">Внедорожник</div>
+        </div>
+        <div class="vehicle-card-body">
+          <h3 class="vehicle-card-title">Toyota Sequoia</h3>
+          <div class="vehicle-card-meta">
+            <span class="vehicle-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              7 мест
+            </span>
+            <span class="vehicle-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+              4x4 полный привод
+            </span>
+          </div>
+        </div>
+        <div class="vehicle-card-footer">
+          <div class="vehicle-price">
+            <strong>По запросу</strong>
+            Уточните стоимость
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">Заказать</a>
+        </div>
+      </article>
+
+      <article class="vehicle-card reveal reveal-delay-1" data-category="suv">
+        <div class="vehicle-card-img">
+          <img src="assets/images/car-rav4.jpg" alt="Toyota RAV4 внедорожник" loading="lazy" width="600" height="375">
+          <div class="vehicle-card-badge">Внедорожник</div>
+        </div>
+        <div class="vehicle-card-body">
+          <h3 class="vehicle-card-title">Toyota RAV4</h3>
+          <div class="vehicle-card-meta">
+            <span class="vehicle-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              5 мест
+            </span>
+            <span class="vehicle-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+              AWD, кондиционер
+            </span>
+          </div>
+        </div>
+        <div class="vehicle-card-footer">
+          <div class="vehicle-price">
+            <strong>По запросу</strong>
+            Уточните стоимость
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">Заказать</a>
+        </div>
+      </article>
+
+      <!-- VIP -->
+      <article class="vehicle-card reveal reveal-delay-2" data-category="vip">
+        <div class="vehicle-card-img">
+          <img src="assets/images/car-mercedes-s.jpg" alt="Mercedes Benz S-Class VIP автомобиль" loading="lazy" width="600" height="375">
+          <div class="vehicle-card-badge">VIP</div>
+        </div>
+        <div class="vehicle-card-body">
+          <h3 class="vehicle-card-title">Mercedes Benz S-Class</h3>
+          <div class="vehicle-card-meta">
+            <span class="vehicle-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              Представительский класс
+            </span>
+            <span class="vehicle-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              3 пассажира
+            </span>
+          </div>
+        </div>
+        <div class="vehicle-card-footer">
+          <div class="vehicle-price">
+            <strong>По запросу</strong>
+            Уточните стоимость
+          </div>
+          <a href="#contact" class="btn btn-primary btn-sm">Заказать</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="text-center mt-48">
+      <a href="vehicles/" class="btn btn-outline--dark btn-outline btn-lg" style="border-color:var(--color-primary);color:var(--color-primary);">
+        Посмотреть весь каталог
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="width:18px;height:18px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     ABOUT
+══════════════════════════════ -->
+<section class="section" id="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about-layout">
+      <div class="about-img-wrap">
+        <div class="about-img-main">
+          <img src="assets/images/fleet-general.webp" alt="Автопарк Bus Service" loading="lazy">
+        </div>
+        <div class="about-img-badge">
+          <div class="about-img-badge-value" data-count="4" data-suffix="+">4+</div>
+          <div class="about-img-badge-label">Лет<br>на рынке</div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <p class="section-label">О компании</p>
+        <h2 class="section-title" id="about-title">Bus Service — надёжный партнёр в поездках</h2>
+        <p class="section-subtitle">
+          Компания основана в январе 2021 года в Бишкеке. За годы работы мы стали надёжным транспортным партнёром для туристических агентств, корпораций и частных клиентов в Центральной Азии.
+        </p>
+
+        <ul class="about-list" aria-label="Ключевые факты о компании">
+          <li class="about-list-item">
+            <span class="about-list-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Обслуживаем Кыргызстан, Казахстан, Узбекистан
+          </li>
+          <li class="about-list-item">
+            <span class="about-list-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Представители в Казахстане, Узбекистане и Дубае
+          </li>
+          <li class="about-list-item">
+            <span class="about-list-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Команда из 8 профессиональных водителей со стажем 10–39 лет
+          </li>
+          <li class="about-list-item">
+            <span class="about-list-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Международные партнёры в Швейцарии, Испании, Франции, Италии
+          </li>
+          <li class="about-list-item">
+            <span class="about-list-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Все водители прошли проверку и регулярное обучение
+          </li>
+        </ul>
+
+        <div class="about-geography">
+          <p class="geo-title">Зона обслуживания</p>
+          <div class="geo-flags">
+            <span class="geo-flag"><span class="geo-flag-icon">🇰🇬</span>Кыргызстан</span>
+            <span class="geo-flag"><span class="geo-flag-icon">🇰🇿</span>Казахстан</span>
+            <span class="geo-flag"><span class="geo-flag-icon">🇺🇿</span>Узбекистан</span>
+            <span class="geo-flag"><span class="geo-flag-icon">🇦🇪</span>ОАЭ (Дубай)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     TEAM
+══════════════════════════════ -->
+<section class="section section--gray" id="team" aria-labelledby="team-title">
+  <div class="container">
+    <div class="text-center">
+      <p class="section-label">Наша команда</p>
+      <h2 class="section-title" id="team-title">Профессиональные водители</h2>
+      <p class="section-subtitle">Опытные водители со стажем от 10 до 39 лет. Знают дороги Кыргызстана, Казахстана и Узбекистана</p>
+    </div>
+
+    <div class="team-grid">
+      <article class="team-card reveal">
+        <div class="team-card-img">
+          <img src="assets/images/driver-1.jpg" alt="Абдирахманов Жenis — водитель" loading="lazy">
+        </div>
+        <div class="team-card-body">
+          <div class="team-card-name">Жenis Абдирахманов</div>
+          <div class="team-card-exp">Стаж 39 лет</div>
+        </div>
+      </article>
+      <article class="team-card reveal reveal-delay-1">
+        <div class="team-card-img">
+          <img src="assets/images/driver-2.jpg" alt="Shinbolat Алауатдинов — водитель" loading="lazy">
+        </div>
+        <div class="team-card-body">
+          <div class="team-card-name">Шинболат Алауатдинов</div>
+          <div class="team-card-exp">Стаж 12 лет</div>
+        </div>
+      </article>
+      <article class="team-card reveal reveal-delay-2">
+        <div class="team-card-img">
+          <img src="assets/images/driver-3.jpg" alt="Жансултан Хайвхан — водитель" loading="lazy">
+        </div>
+        <div class="team-card-body">
+          <div class="team-card-name">Жансултан Хайвхан</div>
+          <div class="team-card-exp">Стаж 10 лет</div>
+        </div>
+      </article>
+      <article class="team-card reveal reveal-delay-3">
+        <div class="team-card-img">
+          <img src="assets/images/driver-4.jpg" alt="Евгений Скиданов — водитель" loading="lazy">
+        </div>
+        <div class="team-card-body">
+          <div class="team-card-name">Евгений Скиданов</div>
+          <div class="team-card-exp">Стаж 27 лет</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     CONTACT CTA
+══════════════════════════════ -->
+<section class="section contact-cta" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="contact-cta-inner">
+      <div>
+        <p class="section-label" style="color:rgba(255,255,255,.6)">Свяжитесь с нами</p>
+        <h2 class="contact-cta-title" id="contact-title">Подберём транспорт<br>за 5 минут</h2>
+        <p class="contact-cta-subtitle">Оставьте заявку или позвоните — наш менеджер поможет с выбором и оформит бронирование</p>
+        <div style="margin-top:24px;display:flex;flex-direction:column;gap:10px;">
+          <div class="contact-info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:+996500809996">+996 500 809 996</a>
+          </div>
+          <div class="contact-info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:manager@bus-service.kg">manager@bus-service.kg</a>
+          </div>
+          <div class="contact-info-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            г. Бишкек, ул. Суеркулова 1/5
+          </div>
+        </div>
+      </div>
+
+      <div style="min-width:340px;">
+        <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-lg);padding:32px;">
+          <h3 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:700;color:var(--color-white);margin-bottom:20px;">Отправить заявку</h3>
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="name" style="color:rgba(255,255,255,.75)">Ваше имя *</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Иванов Иван" required style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.15);color:#fff;">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone" style="color:rgba(255,255,255,.75)">Телефон *</label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="+996 700 000 000" required style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.15);color:#fff;">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="service" style="color:rgba(255,255,255,.75)">Тип транспорта</label>
+              <select id="service" name="service" class="form-select" style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.15);color:#fff;">
+                <option value="">Выберите тип...</option>
+                <option>Автобус (34–53 места)</option>
+                <option>Микроавтобус (15–21 место)</option>
+                <option>Внедорожник</option>
+                <option>VIP-транспорт</option>
+                <option>Минивэн</option>
+                <option>Прокат без водителя</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom:0">
+              <label class="form-label" for="message" style="color:rgba(255,255,255,.75)">Маршрут / комментарий</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Расскажите о вашем маршруте, датах, количестве пассажиров..." style="background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.15);color:#fff;min-height:100px;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-full mt-16" style="justify-content:center;">
+              Отправить заявку
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="assets/images/logo.jpg" alt="Bus Service" width="40" height="40">
+          <span class="footer-logo-name">Bus Service</span>
+        </div>
+        <p class="footer-desc">
+          Профессиональные пассажирские перевозки в Кыргызстане, Казахстане и Узбекистане. Работаем с 2021 года.
+        </p>
+        <div class="footer-social" aria-label="Социальные сети">
+          <!-- WhatsApp -->
+          <a href="https://wa.me/996500809996" class="social-link" aria-label="WhatsApp" rel="noopener" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <!-- Telegram -->
+          <a href="https://t.me/busservicekg" class="social-link" aria-label="Telegram" rel="noopener" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-col-title">Услуги</h3>
+        <ul class="footer-links">
+          <li><a href="vehicles/?category=bus">Аренда автобуса</a></li>
+          <li><a href="vehicles/?category=minibus">Аренда микроавтобуса</a></li>
+          <li><a href="vehicles/?category=suv">Аренда внедорожника</a></li>
+          <li><a href="vehicles/?category=vip">VIP-транспорт</a></li>
+          <li><a href="en/rent-a-car.html">Прокат авто</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-col-title">Компания</h3>
+        <ul class="footer-links">
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#team">Команда</a></li>
+          <li><a href="#fleet">Автопарк</a></li>
+          <li><a href="#contact">Контакты</a></li>
+          <li><a href="en/">English</a></li>
+          <li><a href="de/">Deutsch</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-col-title">Контакты</h3>
+        <address style="font-style:normal;">
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:+996500809996">+996 500 809 996</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:manager@bus-service.kg">manager@bus-service.kg</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            г. Бишкек, ул. Суеркулова 1/5
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            Режим работы: 24/7
+          </div>
+        </address>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2021–2026 Bus Service KG. Все права защищены.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="vehicles/rental-terms.html">Условия аренды</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════════
+     STICKY WHATSAPP
+══════════════════════════════ -->
+<div class="sticky-cta" aria-label="Быстрая связь">
+  <span class="sticky-wa-label">Найдём транспорт за 5 минут</span>
+  <a href="https://wa.me/996500809996" class="sticky-wa" aria-label="Написать в WhatsApp" rel="noopener" target="_blank">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

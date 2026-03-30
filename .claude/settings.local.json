@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xxd /Users/mac/Downloads/bus-service-kg-20260326-133722-pvmkiz43ywoz.wpress)",
+      "Bash(tar xf:*)",
+      "Bash(python3 -c \":*)"
+    ]
+  }
+}
