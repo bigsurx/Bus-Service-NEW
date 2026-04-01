@@ -1,0 +1,182 @@
+/* ─── WayRent-style calendar for react-day-picker v9 ─── */
+
+.rdp-custom {
+  --cell: 44px;
+  --accent: #f97316;
+  --border: #e5e7eb;
+  --border-light: #f3f4f6;
+  --text: #111827;
+  --text-muted: #6b7280;
+  --text-faint: #d1d5db;
+  margin: 0 !important;
+}
+
+/* Root layout — remove all default spacing */
+.rdp-custom .rdp-root,
+.rdp-custom.rdp-root {
+  margin: 0;
+}
+
+/* Months side-by-side — NEVER wrap on desktop */
+.rdp-custom .rdp-months {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  gap: 32px;
+  position: relative;
+}
+
+.rdp-custom .rdp-month {
+  flex: 0 0 auto;
+}
+
+/* Month + year title */
+.rdp-custom .rdp-month_caption {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  color: var(--text);
+}
+
+/* ─── Navigation ─── */
+.rdp-custom .rdp-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.rdp-custom .rdp-button_previous,
+.rdp-custom .rdp-button_next {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: white;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.rdp-custom .rdp-button_previous:hover,
+.rdp-custom .rdp-button_next:hover {
+  background: #f9fafb;
+}
+
+.rdp-custom .rdp-chevron {
+  width: 14px;
+  height: 14px;
+  fill: var(--text-muted);
+}
+
+/* ─── Weekday headers ─── */
+.rdp-custom .rdp-weekdays {
+  display: grid !important;
+  grid-template-columns: repeat(7, var(--cell)) !important;
+  margin-bottom: 2px;
+}
+
+.rdp-custom .rdp-weekday {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: var(--cell) !important;
+  height: 28px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 0 !important;
+}
+
+/* ─── Week rows ─── */
+.rdp-custom .rdp-weeks {
+  display: flex;
+  flex-direction: column;
+}
+
+.rdp-custom .rdp-week {
+  display: grid !important;
+  grid-template-columns: repeat(7, var(--cell)) !important;
+}
+
+/* ─── Day cells ─── */
+.rdp-custom .rdp-day {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: var(--cell) !important;
+  height: var(--cell) !important;
+  padding: 2px !important;
+}
+
+.rdp-custom .rdp-day_button {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--cell) - 4px) !important;
+  height: calc(var(--cell) - 4px) !important;
+  border-radius: 8px !important;
+  border: 1px solid var(--border) !important;
+  background: white !important;
+  font-size: 0.875rem;
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.rdp-custom .rdp-day_button:hover {
+  border-color: var(--accent) !important;
+  background: #fff7ed !important;
+}
+
+/* Today */
+.rdp-custom .rdp-today .rdp-day_button {
+  border-color: var(--accent) !important;
+  color: var(--accent) !important;
+  font-weight: 700;
+}
+
+/* Selected */
+.rdp-custom .rdp-selected .rdp-day_button {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: white !important;
+  font-weight: 600;
+}
+
+/* Disabled */
+.rdp-custom .rdp-disabled .rdp-day_button {
+  opacity: 0.25 !important;
+  cursor: not-allowed !important;
+  border-color: var(--border-light) !important;
+}
+
+.rdp-custom .rdp-disabled .rdp-day_button:hover {
+  background: white !important;
+  border-color: var(--border-light) !important;
+}
+
+/* Outside (prev/next month days) */
+.rdp-custom .rdp-outside .rdp-day_button {
+  color: var(--text-faint) !important;
+  border-color: var(--border-light) !important;
+}
+
+/* ─── Mobile: single month ─── */
+@media (max-width: 767px) {
+  .rdp-custom .rdp-months {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

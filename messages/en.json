@@ -1,0 +1,223 @@
+{
+  "nav": {
+    "services": "Services",
+    "fleet": "Fleet",
+    "about": "About",
+    "team": "Team",
+    "contact": "Contact",
+    "catalog": "Catalog",
+    "tagline": "Passenger Transportation"
+  },
+  "hero": {
+    "badge": "Operating since 2021",
+    "title": "Passenger",
+    "title2": "transport for",
+    "titleEm": "every journey",
+    "subtitle": "Bus, minibus, SUV and VIP vehicle hire with professional drivers. Serving Kyrgyzstan, Kazakhstan and Uzbekistan.",
+    "ctaPrimary": "Book Transport",
+    "ctaSecondary": "View Fleet",
+    "scroll": "Scroll",
+    "statYears": "Years in business",
+    "statVehicles": "Vehicles",
+    "statDrivers": "Expert drivers",
+    "statCountries": "Countries"
+  },
+  "trust": {
+    "safety": "Safety First",
+    "support": "24/7 Support",
+    "drivers": "Professional Drivers",
+    "fleet": "Modern Fleet",
+    "pricing": "Transparent Pricing"
+  },
+  "services": {
+    "label": "Our Services",
+    "title": "Full range of transport services",
+    "subtitle": "From compact minivans to large touring coaches — we find the right vehicle for every task",
+    "bus": {
+      "title": "Bus Rental",
+      "desc": "YUTONG, NEOPLAN, ZHONGTONG tourist coaches for 34-53 passengers. A/C, TV, microphone, toilet on board.",
+      "link": "View buses"
+    },
+    "minibus": {
+      "title": "Minibus Rental",
+      "desc": "Mercedes Benz Sprinter and similar vehicles for 15-21 passengers. Perfect for corporate transfers and group trips.",
+      "link": "View minibuses"
+    },
+    "suv": {
+      "title": "SUV Rental",
+      "desc": "Toyota Sequoia, Land Cruiser Prado, Lexus LX/GX with experienced drivers. For mountain routes and off-road destinations.",
+      "link": "View SUVs"
+    },
+    "vip": {
+      "title": "VIP Transport",
+      "desc": "Mercedes Benz V Class, S-Class, Maybach. Executive service for business travel, delegation transfers and special events.",
+      "link": "View VIP"
+    },
+    "tours": {
+      "title": "Guided Tours",
+      "desc": "Transport logistics for sightseeing tours across Kyrgyzstan, Kazakhstan and Central Asia. Full route support.",
+      "link": "Learn more"
+    },
+    "rental": {
+      "title": "Self-Drive Car Rental",
+      "desc": "Independent 4x4 SUV hire for adventurous travellers. Toyota Prado, Sequoia, RAV4, Lada Niva. Asia Expeditions brand.",
+      "link": "Rent a car"
+    }
+  },
+  "whyUs": {
+    "label": "Why Us",
+    "title": "8 reasons to choose Bus Service",
+    "subtitle": "We have done everything to make your trips comfortable, safe and hassle-free",
+    "reasons": [
+      {
+        "title": "Reliability & Safety",
+        "desc": "Regular maintenance of the entire fleet. All vehicles are insured and inspected before every trip."
+      },
+      {
+        "title": "Professional Drivers",
+        "desc": "10 to 39 years of experience. Knowledge of local roads, mountain routes and Central Asian border crossings."
+      },
+      {
+        "title": "Modern Fleet",
+        "desc": "Constantly updated vehicles. Buses with A/C, USB charging, Wi-Fi and entertainment systems."
+      },
+      {
+        "title": "Flexible Rental Terms",
+        "desc": "Hourly, daily and long-term rental. Individual approach to every client and route."
+      },
+      {
+        "title": "Affordable Prices",
+        "desc": "Transparent pricing with no hidden fees. Special rates for regular clients and corporate partners."
+      },
+      {
+        "title": "24/7 Support",
+        "desc": "Round-the-clock dispatch service. We promptly resolve any issues throughout your trip."
+      },
+      {
+        "title": "Wide Vehicle Selection",
+        "desc": "Buses, minibuses, SUVs, VIP cars, minivans. Transport for tourists, corporations and private clients."
+      },
+      {
+        "title": "Easy Booking",
+        "desc": "Submit a request on the site or call us — we will find transport within 5 minutes and confirm your booking."
+      }
+    ]
+  },
+  "about": {
+    "label": "About Us",
+    "title": "Your reliable transport partner in Central Asia",
+    "subtitle": "Founded in Bishkek in 2021, Bus Service has grown into a trusted transport provider for travel agencies, corporations and individual clients across Central Asia.",
+    "facts": [
+      "Serving Kyrgyzstan, Kazakhstan and Uzbekistan",
+      "Representatives in Kazakhstan, Uzbekistan and Dubai",
+      "Team of 8 professional drivers with 10-39 years experience",
+      "International partners in Switzerland, Spain, France, Italy"
+    ],
+    "geoTitle": "Service area",
+    "countries": {
+      "kg": "Kyrgyzstan",
+      "kz": "Kazakhstan",
+      "uz": "Uzbekistan",
+      "ae": "UAE (Dubai)"
+    }
+  },
+  "contact": {
+    "label": "Get in Touch",
+    "title": "Find the right vehicle in 5 minutes",
+    "subtitle": "Send a request or call us — our manager will help you choose and confirm your booking",
+    "formTitle": "Send a Request",
+    "name": "Your name",
+    "namePlaceholder": "John Smith",
+    "phone": "Phone",
+    "phonePlaceholder": "+996 700 000 000",
+    "service": "Vehicle type",
+    "servicePlaceholder": "Select type...",
+    "serviceOptions": ["Bus (34-53 seats)", "Minibus (15-21 seats)", "SUV", "VIP transport", "Minivan", "Self-drive rental"],
+    "message": "Route / notes",
+    "messagePlaceholder": "Tell us about your route, dates, number of passengers...",
+    "submit": "Send Request",
+    "success": "Request sent successfully! We will contact you shortly.",
+    "error": "Something went wrong. Please try again."
+  },
+  "footer": {
+    "desc": "Professional passenger transport in Kyrgyzstan, Kazakhstan and Uzbekistan. Operating since 2021.",
+    "servicesTitle": "Services",
+    "companyTitle": "Company",
+    "contactTitle": "Contact",
+    "aboutUs": "About Us",
+    "fleetCatalog": "Fleet Catalog",
+    "contactUs": "Contact",
+    "open247": "Open 24/7",
+    "copyright": "© 2021-{year} Bus Service KG. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Rental Terms"
+  },
+  "booking": {
+    "steps": ["Search", "Vehicle", "Extras", "Confirm"],
+    "pickupLocation": "Pickup location",
+    "returnLocation": "Return location",
+    "differentReturn": "Different return location",
+    "pickupDate": "Pickup date",
+    "returnDate": "Return date",
+    "pickupTime": "Pickup time",
+    "returnTime": "Return time",
+    "search": "Search Vehicles",
+    "searching": "Searching...",
+    "selectLocation": "Select location",
+    "vehiclesFound": "vehicles found",
+    "noVehicles": "No vehicles available for selected dates",
+    "seats": "seats",
+    "perDay": "/day",
+    "select": "Select",
+    "selecting": "Selecting...",
+    "insurance": "Insurance",
+    "noInsurance": "No insurance",
+    "equipment": "Additional equipment",
+    "coupon": "Promo code",
+    "applyCoupon": "Apply",
+    "couponApplied": "Coupon applied!",
+    "couponError": "Invalid coupon code",
+    "bookingHold": "Your vehicle is held for",
+    "minutes": "min",
+    "seconds": "sec",
+    "continue": "Continue",
+    "orderSummary": "Order Summary",
+    "vehicle": "Vehicle",
+    "dates": "Dates",
+    "total": "Total",
+    "driverDetails": "Driver Details",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phoneNumber": "Phone",
+    "country": "Country",
+    "paymentMethod": "Payment method",
+    "confirmBooking": "Confirm Booking",
+    "confirming": "Confirming...",
+    "confirmError": "Booking confirmation failed. Please try again.",
+    "bookingConfirmed": "Booking Confirmed!",
+    "redirecting": "Redirecting to payment...",
+    "timerExpired": "Booking time expired. Please start again.",
+    "backToSearch": "Back to Search",
+    "selectDate": "Select date",
+    "validation": {
+      "locationRequired": "Please select a pickup location",
+      "pickupDateRequired": "Please select a pickup date",
+      "returnDateRequired": "Please select a return date",
+      "returnAfterPickup": "Return date must be after pickup date",
+      "returnLocationRequired": "Please select a return location",
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "invalidEmail": "Please enter a valid email address",
+      "phoneRequired": "Phone number is required (min 5 digits)"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "learnMore": "Learn more",
+    "bookNow": "Book now",
+    "callUs": "Call us",
+    "required": "Required"
+  }
+}
