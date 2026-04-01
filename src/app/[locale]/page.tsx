@@ -4,6 +4,7 @@ import { TrustBar } from "@/components/sections/TrustBar";
 import { BookingWizard } from "@/components/booking/BookingWizard";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { WhyUsSection } from "@/components/sections/WhyUsSection";
+import { ReviewsSection } from "@/components/sections/ReviewsSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 
@@ -22,6 +23,7 @@ export default async function HomePage({ params }: Props) {
       <BookingWizard />
       <ServicesSection />
       <WhyUsSection />
+      <ReviewsSection />
       <AboutSection />
       <ContactSection />
     </>

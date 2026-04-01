@@ -212,6 +212,14 @@
       "phoneRequired": "Telefonnummer ist erforderlich (mindestens 5 Ziffern)"
     }
   },
+  "reviews": {
+    "label": "Bewertungen",
+    "title": "Was unsere Kunden sagen",
+    "subtitle": "Echte Bewertungen von verifizierten Kunden auf Google Maps",
+    "basedOn": "Basierend auf {count} Bewertung auf Google",
+    "leaveReview": "Teilen Sie Ihre Erfahrung",
+    "leaveReviewSub": "Bewertung auf Google Maps hinterlassen"
+  },
   "common": {
     "loading": "Laden...",
     "error": "Etwas ist schiefgelaufen",

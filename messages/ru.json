@@ -212,6 +212,14 @@
       "phoneRequired": "Введите номер телефона (минимум 5 цифр)"
     }
   },
+  "reviews": {
+    "label": "Отзывы",
+    "title": "Что говорят наши клиенты",
+    "subtitle": "Реальные отзывы от проверенных клиентов на Google Maps",
+    "basedOn": "На основе {count} отзыва на Google",
+    "leaveReview": "Поделитесь опытом",
+    "leaveReviewSub": "Оставьте отзыв на Google Maps"
+  },
   "common": {
     "loading": "Загрузка...",
     "error": "Что-то пошло не так",
