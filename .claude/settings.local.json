@@ -3,7 +3,12 @@
     "allow": [
       "Bash(xxd /Users/mac/Downloads/bus-service-kg-20260326-133722-pvmkiz43ywoz.wpress)",
       "Bash(tar xf:*)",
-      "Bash(python3 -c \":*)"
+      "Bash(python3 -c \":*)",
+      "Bash(npx next:*)",
+      "Bash(npm install:*)",
+      "Bash(grep -r \"middleware\\\\|proxy\" node_modules/next-intl/dist/ --include=*.d.ts -l)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx tsc:*)"
     ]
   }
 }

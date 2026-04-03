@@ -1,0 +1,239 @@
+{
+  "nav": {
+    "services": "Dienstleistungen",
+    "fleet": "Fahrzeugpark",
+    "about": "Über uns",
+    "team": "Team",
+    "contact": "Kontakt",
+    "catalog": "Katalog",
+    "tagline": "Personenbeförderung"
+  },
+  "hero": {
+    "badge": "Seit 2021 im Einsatz",
+    "title": "Personen-",
+    "title2": "beförderung für",
+    "titleEm": "jede Reise",
+    "subtitle": "Bus-, Kleinbus-, SUV- und VIP-Fahrzeugvermietung mit professionellen Fahrern. In Kirgisistan, Kasachstan und Usbekistan.",
+    "ctaPrimary": "Transport buchen",
+    "ctaSecondary": "Fahrzeugpark ansehen",
+    "scroll": "Scrollen",
+    "statYears": "Jahre im Geschäft",
+    "statVehicles": "Fahrzeuge",
+    "statDrivers": "Erfahrene Fahrer",
+    "statCountries": "Länder"
+  },
+  "trust": {
+    "safety": "Sicherheit zuerst",
+    "support": "24/7 Support",
+    "drivers": "Professionelle Fahrer",
+    "fleet": "Moderner Fuhrpark",
+    "pricing": "Transparente Preise"
+  },
+  "services": {
+    "label": "Unsere Dienstleistungen",
+    "title": "Komplettes Spektrum an Transportdiensten",
+    "subtitle": "Vom kompakten Minivan bis zum großen Reisebus — wir finden das richtige Fahrzeug für jede Aufgabe",
+    "bus": {
+      "title": "Busvermietung",
+      "desc": "YUTONG, NEOPLAN, ZHONGTONG Reisebusse für 34–53 Passagiere. Klimaanlage, TV, Mikrofon, Toilette an Bord.",
+      "link": "Busse ansehen"
+    },
+    "minibus": {
+      "title": "Kleinbusvermietung",
+      "desc": "Mercedes Benz Sprinter und ähnliche Fahrzeuge für 15–21 Passagiere. Ideal für Firmentransfers und Gruppenreisen.",
+      "link": "Kleinbusse ansehen"
+    },
+    "suv": {
+      "title": "SUV-Vermietung",
+      "desc": "Toyota Sequoia, Land Cruiser Prado, Lexus LX/GX mit erfahrenen Fahrern. Für Bergstrecken und Offroad-Ziele.",
+      "link": "SUVs ansehen"
+    },
+    "vip": {
+      "title": "VIP-Transport",
+      "desc": "Mercedes Benz V-Klasse, S-Klasse, Maybach. Executive-Service für Geschäftsreisen, Delegationsempfänge und besondere Anlässe.",
+      "link": "VIP ansehen"
+    },
+    "tours": {
+      "title": "Geführte Touren",
+      "desc": "Transportlogistik für Besichtigungstouren durch Kirgisistan, Kasachstan und Zentralasien. Volle Routenunterstützung.",
+      "link": "Mehr erfahren"
+    },
+    "rental": {
+      "title": "Selbstfahrer-Mietwagen",
+      "desc": "Unabhängige 4x4-SUV-Miete für abenteuerlustige Reisende. Toyota Prado, Sequoia, RAV4, Lada Niva.",
+      "link": "Auto mieten"
+    }
+  },
+  "whyUs": {
+    "label": "Warum wir",
+    "title": "8 Gründe für Bus Service",
+    "subtitle": "Wir haben alles getan, um Ihre Reisen komfortabel, sicher und sorgenfrei zu gestalten",
+    "reasons": [
+      {
+        "title": "Zuverlässigkeit & Sicherheit",
+        "desc": "Regelmäßige Wartung der gesamten Flotte. Alle Fahrzeuge sind versichert und werden vor jeder Fahrt überprüft."
+      },
+      {
+        "title": "Professionelle Fahrer",
+        "desc": "10 bis 39 Jahre Erfahrung. Kenntnis lokaler Straßen, Bergstrecken und zentralasiatischer Grenzübergänge."
+      },
+      {
+        "title": "Moderner Fuhrpark",
+        "desc": "Ständig aktualisierte Fahrzeuge. Busse mit Klimaanlage, USB-Ladung, WLAN und Unterhaltungssystemen."
+      },
+      {
+        "title": "Flexible Mietbedingungen",
+        "desc": "Stunden-, tage- und langfristige Vermietung. Individueller Ansatz für jeden Kunden und jede Route."
+      },
+      {
+        "title": "Erschwingliche Preise",
+        "desc": "Transparente Preisgestaltung ohne versteckte Gebühren. Sondertarife für Stammkunden und Firmenpartner."
+      },
+      {
+        "title": "24/7 Support",
+        "desc": "Rund-um-die-Uhr-Disposition. Wir lösen alle Fragen während Ihrer gesamten Reise umgehend."
+      },
+      {
+        "title": "Große Fahrzeugauswahl",
+        "desc": "Busse, Kleinbusse, SUVs, VIP-Autos, Minivans. Transport für Touristen, Unternehmen und Privatpersonen."
+      },
+      {
+        "title": "Einfache Buchung",
+        "desc": "Senden Sie eine Anfrage oder rufen Sie an — wir finden innerhalb von 5 Minuten den Transport und bestätigen Ihre Buchung."
+      }
+    ]
+  },
+  "about": {
+    "label": "Über uns",
+    "title": "Ihr zuverlässiger Transportpartner in Zentralasien",
+    "subtitle": "2021 in Bischkek gegründet, hat sich Bus Service zu einem vertrauenswürdigen Transportanbieter für Reisebüros, Unternehmen und Privatkunden in ganz Zentralasien entwickelt.",
+    "facts": [
+      "Bedienen Kirgisistan, Kasachstan und Usbekistan",
+      "Vertreter in Kasachstan, Usbekistan und Dubai",
+      "Team von 8 professionellen Fahrern mit 10–39 Jahren Erfahrung",
+      "Internationale Partner in der Schweiz, Spanien, Frankreich, Italien"
+    ],
+    "geoTitle": "Servicegebiet",
+    "countries": {
+      "kg": "Kirgisistan",
+      "kz": "Kasachstan",
+      "uz": "Usbekistan",
+      "ae": "VAE (Dubai)"
+    }
+  },
+  "contact": {
+    "label": "Kontaktieren Sie uns",
+    "title": "Finden Sie das richtige Fahrzeug in 5 Minuten",
+    "subtitle": "Senden Sie eine Anfrage oder rufen Sie an — unser Manager hilft Ihnen bei der Auswahl und bestätigt Ihre Buchung",
+    "formTitle": "Anfrage senden",
+    "name": "Ihr Name",
+    "namePlaceholder": "Max Mustermann",
+    "phone": "Telefon",
+    "phonePlaceholder": "+49 170 000 0000",
+    "service": "Fahrzeugtyp",
+    "servicePlaceholder": "Typ wählen...",
+    "serviceOptions": ["Bus (34–53 Sitze)", "Kleinbus (15–21 Sitze)", "SUV", "VIP-Transport", "Minivan", "Selbstfahrer-Miete"],
+    "message": "Route / Anmerkungen",
+    "messagePlaceholder": "Erzählen Sie uns von Ihrer Route, Daten, Passagieranzahl...",
+    "submit": "Anfrage senden",
+    "success": "Anfrage erfolgreich gesendet! Wir werden uns in Kürze bei Ihnen melden.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut."
+  },
+  "footer": {
+    "desc": "Professionelle Personenbeförderung in Kirgisistan, Kasachstan und Usbekistan. Seit 2021.",
+    "servicesTitle": "Dienstleistungen",
+    "companyTitle": "Unternehmen",
+    "contactTitle": "Kontakt",
+    "aboutUs": "Über uns",
+    "fleetCatalog": "Fahrzeugkatalog",
+    "contactUs": "Kontakt",
+    "open247": "24/7 geöffnet",
+    "copyright": "© 2021–{year} Bus Service KG. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutz",
+    "terms": "Mietbedingungen"
+  },
+  "booking": {
+    "steps": ["Suche", "Fahrzeug", "Extras", "Bestätigung"],
+    "pickupLocation": "Abholort",
+    "returnLocation": "Rückgabeort",
+    "differentReturn": "Anderer Rückgabeort",
+    "pickupDate": "Abholdatum",
+    "returnDate": "Rückgabedatum",
+    "pickupTime": "Abholzeit",
+    "returnTime": "Rückgabezeit",
+    "search": "Fahrzeuge suchen",
+    "searching": "Suche...",
+    "selectLocation": "Ort wählen",
+    "vehiclesFound": "Fahrzeuge gefunden",
+    "noVehicles": "Keine Fahrzeuge für die gewählten Daten verfügbar",
+    "seats": "Sitze",
+    "perDay": "/Tag",
+    "select": "Auswählen",
+    "selecting": "Wird ausgewählt...",
+    "insurance": "Versicherung",
+    "noInsurance": "Keine Versicherung",
+    "equipment": "Zusatzausstattung",
+    "coupon": "Gutscheincode",
+    "applyCoupon": "Einlösen",
+    "couponApplied": "Gutschein eingelöst!",
+    "couponError": "Ungültiger Gutscheincode",
+    "bookingHold": "Ihr Fahrzeug ist reserviert für",
+    "minutes": "Min",
+    "seconds": "Sek",
+    "continue": "Weiter",
+    "orderSummary": "Bestellübersicht",
+    "vehicle": "Fahrzeug",
+    "dates": "Daten",
+    "total": "Gesamt",
+    "driverDetails": "Fahrerdaten",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail",
+    "phoneNumber": "Telefon",
+    "country": "Land",
+    "paymentMethod": "Zahlungsmethode",
+    "confirmBooking": "Buchung bestätigen",
+    "confirming": "Bestätigung...",
+    "confirmError": "Buchungsbestätigung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "bookingConfirmed": "Buchung bestätigt!",
+    "redirecting": "Weiterleitung zur Zahlung...",
+    "timerExpired": "Buchungszeit abgelaufen. Bitte starten Sie erneut.",
+    "backToSearch": "Zurück zur Suche",
+    "licenseDetails": "Führerschein",
+    "licenseNumber": "Führerscheinnummer",
+    "licenseIssueDate": "Ausstellungsdatum",
+    "licenseExpiryDate": "Ablaufdatum",
+    "licensePhoto": "Führerscheinfoto",
+    "licensePhotoHint": "Laden Sie Vorder- und Rückseite Ihres Führerscheins hoch (optional)",
+    "uploading": "Wird hochgeladen...",
+    "uploadFailed": "Upload fehlgeschlagen, bitte erneut versuchen",
+    "selectDate": "Datum wählen",
+    "validation": {
+      "locationRequired": "Bitte wählen Sie einen Abholort",
+      "pickupDateRequired": "Bitte wählen Sie ein Abholdatum",
+      "returnDateRequired": "Bitte wählen Sie ein Rückgabedatum",
+      "returnAfterPickup": "Das Rückgabedatum muss nach dem Abholdatum liegen",
+      "returnLocationRequired": "Bitte wählen Sie einen Rückgabeort",
+      "firstNameRequired": "Vorname ist erforderlich",
+      "lastNameRequired": "Nachname ist erforderlich",
+      "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "phoneRequired": "Telefonnummer ist erforderlich (mindestens 5 Ziffern)"
+    }
+  },
+  "reviews": {
+    "label": "Bewertungen",
+    "title": "Was unsere Kunden sagen",
+    "subtitle": "Echte Bewertungen von verifizierten Kunden auf Google Maps",
+    "basedOn": "Basierend auf {count} Bewertung auf Google",
+    "leaveReview": "Teilen Sie Ihre Erfahrung",
+    "leaveReviewSub": "Bewertung auf Google Maps hinterlassen"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Etwas ist schiefgelaufen",
+    "learnMore": "Mehr erfahren",
+    "bookNow": "Jetzt buchen",
+    "callUs": "Anrufen",
+    "required": "Pflichtfeld"
+  }
+}
