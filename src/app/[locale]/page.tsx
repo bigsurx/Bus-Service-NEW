@@ -22,8 +22,8 @@ export default async function HomePage({ params }: Props) {
       <TrustBar />
       <BookingWizard />
       <ServicesSection />
-      <WhyUsSection />
       <ReviewsSection />
+      <WhyUsSection />
       <AboutSection />
       <ContactSection />
     </>

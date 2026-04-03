@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { useTranslations } from "next-intl";
 import { useBookingStore } from "@/stores/booking";
 import { CountdownTimer } from "./CountdownTimer";
@@ -14,9 +14,23 @@ export function StepExtras() {
   const [couponStatus, setCouponStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [saving, setSaving] = useState(false);
 
-  // Use order-specific insurances/options (from order/create response)
   const insurances = store.orderInsurances;
   const options = store.orderOptions;
+  const sym = store.currencySymbol || "$";
+
+  // Calculate the displayed total live based on user's equipment selections.
+  // The API-provided orderTotal includes the pre-selected extras,
+  // so we compute the delta from the initial quantities.
+  const displayTotal = useMemo(() => {
+    let delta = 0;
+    for (const opt of options) {
+      const initialQty = opt.quantity; // what the API pre-selected
+      const currentQty = store.selectedEquipment[opt.id] ?? 0;
+      const diff = currentQty - initialQty;
+      delta += diff * parseFloat(opt.price_day) * (store.selectedVehicle?.count_days || 1);
+    }
+    return Math.max(0, store.orderTotal + delta);
+  }, [options, store.selectedEquipment, store.orderTotal, store.selectedVehicle?.count_days]);
 
   async function applyCoupon() {
     if (!couponInput || !store.orderId) return;
@@ -45,8 +59,7 @@ export function StepExtras() {
     if (!store.orderId) return;
     setSaving(true);
     try {
-      // Always send all extras (including 0s) so the API recalculates the total
-      // reflecting the user's actual selections — not the pre-selected defaults
+      // Always send all extras (including 0s) so the API recalculates
       const extras: Record<string, number> = {};
       for (const opt of store.orderOptions) {
         extras[String(opt.id)] = store.selectedEquipment[opt.id] ?? 0;
@@ -76,7 +89,7 @@ export function StepExtras() {
     <div className="space-y-6">
       <CountdownTimer />
 
-      {/* Insurance (from order response) */}
+      {/* Insurance */}
       {insurances.length > 0 && (
         <div>
           <h3 className="mb-3 flex items-center gap-2 text-sm font-bold">
@@ -115,7 +128,7 @@ export function StepExtras() {
                   </div>
                 </div>
                 <span className="text-sm font-bold text-accent">
-                  {store.currencySymbol}{ins.price}
+                  {sym}{ins.price}
                 </span>
               </label>
             ))}
@@ -123,7 +136,7 @@ export function StepExtras() {
         </div>
       )}
 
-      {/* Equipment / Options (from order response) */}
+      {/* Equipment / Options */}
       {options.length > 0 && (
         <div>
           <h3 className="mb-3 text-sm font-bold">{t("equipment")}</h3>
@@ -138,7 +151,7 @@ export function StepExtras() {
                   <div className="flex-1 pr-4">
                     <span className="text-sm font-medium">{opt.title}</span>
                     <span className="ml-2 text-xs text-muted-foreground">
-                      {store.currencySymbol}{opt.price_day}/day
+                      {sym}{opt.price_day}/{t("perDay").replace("/", "")}
                     </span>
                     {opt.description && (
                       <p className="mt-0.5 text-xs text-muted-foreground">{opt.description}</p>
@@ -203,7 +216,7 @@ export function StepExtras() {
       <div className="flex items-center justify-between rounded-lg bg-muted p-4">
         <span className="font-medium">{t("total")}</span>
         <span className="text-xl font-extrabold text-accent">
-          {store.currencySymbol}{store.orderTotal}
+          {sym}{displayTotal.toFixed(2)}
         </span>
       </div>
 

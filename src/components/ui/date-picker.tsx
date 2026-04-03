@@ -110,22 +110,42 @@ export const DatePicker = forwardRef<DatePickerHandle, DatePickerProps>(
 
         {/* Calendar dropdown */}
         {isOpen && (
-          <div
-            className={`absolute z-50 rounded-xl border border-gray-200 bg-white p-4 shadow-2xl ${
-              dropUp ? "bottom-full mb-2" : "top-full mt-2"
-            }`}
-            style={{ right: 0, minWidth: "fit-content" }}
-          >
-            <DayPicker
-              className="rdp-custom"
-              mode="single"
-              numberOfMonths={2}
-              selected={selected}
-              onSelect={handleSelect}
-              disabled={minDate ? { before: minDate } : undefined}
-              defaultMonth={selected || minDate || new Date()}
-            />
-          </div>
+          <>
+            {/* Mobile: fixed overlay centered on screen */}
+            <div
+              className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-black/20 pt-20 md:hidden"
+              onClick={(e) => { if (e.target === e.currentTarget) setIsOpen(false); }}
+            >
+              <div className="mx-4 rounded-xl border border-gray-200 bg-white p-4 shadow-2xl">
+                <DayPicker
+                  className="rdp-custom"
+                  mode="single"
+                  numberOfMonths={1}
+                  selected={selected}
+                  onSelect={handleSelect}
+                  disabled={minDate ? { before: minDate } : undefined}
+                  defaultMonth={selected || minDate || new Date()}
+                />
+              </div>
+            </div>
+            {/* Desktop: absolute dropdown anchored right */}
+            <div
+              className={`absolute z-50 hidden rounded-xl border border-gray-200 bg-white p-4 shadow-2xl md:block ${
+                dropUp ? "bottom-full mb-2" : "top-full mt-2"
+              }`}
+              style={{ right: 0, minWidth: "fit-content" }}
+            >
+              <DayPicker
+                className="rdp-custom"
+                mode="single"
+                numberOfMonths={2}
+                selected={selected}
+                onSelect={handleSelect}
+                disabled={minDate ? { before: minDate } : undefined}
+                defaultMonth={selected || minDate || new Date()}
+              />
+            </div>
+          </>
         )}
       </div>
     );

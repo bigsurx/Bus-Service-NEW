@@ -137,8 +137,8 @@ export const useBookingStore = create<BookingState>((set) => ({
       paymentMethods: s.payment_methods,
       insurances: s.insurances,
       equipments: s.equipments,
-      currency: s.currency,
-      currencySymbol: s.currency_symbol,
+      currency: s.currency || "USD",
+      currencySymbol: s.currency_symbol || "$",
       timerDuration: (s.time_for_booking ?? 600) * 1000,
     }),
 

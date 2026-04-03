@@ -159,6 +159,14 @@ export async function confirmOrder(
     formData.append(`drivers[${i}][email]`, driver.email);
     formData.append(`drivers[${i}][phone]`, driver.phone);
     if (driver.country) formData.append(`drivers[${i}][country]`, driver.country);
+    if (driver.license_num) formData.append(`drivers[${i}][license_num]`, driver.license_num);
+    if (driver.license_from) formData.append(`drivers[${i}][license_from]`, driver.license_from);
+    if (driver.license_to) formData.append(`drivers[${i}][license_to]`, driver.license_to);
+    if (driver.license_photo) {
+      driver.license_photo.forEach((photoId, j) => {
+        formData.append(`drivers[${i}][license_photo][${j}]`, photoId);
+      });
+    }
   });
 
   formData.append("payment_method", params.payment_method);

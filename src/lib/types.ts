@@ -149,6 +149,10 @@ export interface DriverDetails {
   email: string;
   phone: string;
   country?: string;
+  license_num?: string;
+  license_from?: string; // YYYY-MM-DD
+  license_to?: string;   // YYYY-MM-DD
+  license_photo?: string[]; // file IDs from /v2/file/upload
 }
 
 export interface Order {
